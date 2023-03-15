@@ -1,84 +1,84 @@
-*{ 
-    box-sizing: border-box;
-    margin: 0;
-    user-select: none;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  user-select: none;
 }
-body{ 
-    margin: 0;
-    padding: 0;
-    display: grid;
-    background-color: black;
-    height: 100vh;
-    place-items: center;
+body {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  background-color: black;
+  height: 100vh;
+  place-items: center;
 }
 :root {
-    --pomodoro: #db524d;
-    --shortBreak: #38858a;
-    --longBreak: #397097;
-  }
-button{ 
-    cursor: pointer;
+  --pomodoro: #db524d;
+  --shortBreak: #38858a;
+  --longBreak: #397097;
 }
-.timer-container{ 
-    width: 550px;
-    height: 400px;
-    background: #ffffff90;
-    border-radius: 30px;
+button {
+  cursor: pointer;
 }
-.box{ 
-    display: flex;
-    align-items: center;
-    gap: 40px;
-    justify-content: center;
-    padding-top: 20px;
+.timer-container {
+  width: 550px;
+  height: 400px;
+  background: #ffffff90;
+  border-radius: 30px;
 }
-.part{ 
-    color: white;
-    font-size: 18px;
-    font-family: "poppins";
-    font-weight: 700;
-    cursor: pointer;
-    width: 120px;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 30px;
+.box {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  justify-content: center;
+  padding-top: 20px;
 }
-.part:hover{
-    background-color: indianred;
+.part {
+  color: white;
+  font-size: 18px;
+  font-family: "poppins";
+  font-weight: 700;
+  cursor: pointer;
+  width: 120px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+}
+.part:hover {
+  background-color: indianred;
 }
 
-.counter{ 
-    font-family: "poppins";
-    color: white;
-    font-weight: 600;
-    font-size: 140px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.counter {
+  font-family: "poppins";
+  color: white;
+  font-weight: 600;
+  font-size: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.start-button{ 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
+.start-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
 }
-.style{ 
-    cursor: pointer;
-    border: none;
-    margin: 20px 0px 0px;
-    padding: 0px 12px;
-    border-radius: 4px;
-    box-shadow: rgb(235, 235, 235) 0px 6px 0px;
-    font-family: "poppins";
-    font-size: 22px;
-    height: 55px;
-    color: rgb(186, 73, 73);
-    font-weight: bold;
-    width: 200px;
-    background-color: white;
-    transition: color 0.5s ease-in-out 0s;
+.style {
+  cursor: pointer;
+  border: none;
+  margin: 20px 0px 0px;
+  padding: 0px 12px;
+  border-radius: 4px;
+  box-shadow: rgb(235, 235, 235) 0px 6px 0px;
+  font-family: "poppins";
+  font-size: 22px;
+  height: 55px;
+  color: rgb(186, 73, 73);
+  font-weight: bold;
+  width: 200px;
+  background-color: white;
+  transition: color 0.5s ease-in-out 0s;
 }
 button:focus,
 button:active {
@@ -88,4 +88,29 @@ button:active {
   transform: translateY(6px);
   box-shadow: none;
   outline: none;
+}
+
+.cursor {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  border: 1px solid white;
+  border-radius: 50%;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: 0.1s;
+}
+.cursor2 {
+  position: fixed;
+  width: 8px;
+  height: 8px;
+  background-color: white;
+  border-radius: 50%;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: 0.15s;
 }

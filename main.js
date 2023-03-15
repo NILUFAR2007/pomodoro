@@ -7,19 +7,20 @@ const short = document.querySelector(".short");
 const long = document.querySelector(".long");
 const counter = document.querySelector(".counter");
 
+var cursor = document.querySelector(".cursor");
+var cursor2 = document.querySelector(".cursor2");
+document.addEventListener("mousemove", function (e) {
+  cursor.style.cssText = cursor2.style.cssText =
+    "left: " + e.clientX + "px; top:" + e.clientY + "px;";
+});
+
 buttons.forEach((button) => {
   button.addEventListener("click", () => {
     audio.play();
   });
 });
 
-btn.addEventListener("click", () => {
-  if (btn.textContent === "start") {
-    btn.innerText = "pause";
-  } else {
-    btn.innerText = "start";
-  }
-});
+
 
 pomodoro.addEventListener("click", function () {
   document.body.style.backgroundColor = "#db524d";
