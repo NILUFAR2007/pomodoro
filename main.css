@@ -62,8 +62,9 @@ button{
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 10px;
 }
-.start{ 
+.style{ 
     cursor: pointer;
     border: none;
     margin: 20px 0px 0px;
@@ -83,7 +84,7 @@ button:focus,
 button:active {
   outline: none;
 }
-.start:active {
+.style:active {
   transform: translateY(6px);
   box-shadow: none;
   outline: none;
