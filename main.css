@@ -1,0 +1,100 @@
+*{ 
+    box-sizing: border-box;
+    margin: 0;
+}
+body{ 
+    margin: 0;
+    padding: 0;
+    background: rgb(186, 73, 73);
+    display: grid;
+    height: 100vh;
+    place-items: center;
+}
+:root {
+    --pomodoro: #db524d;
+    --shortBreak: #38858a;
+    --longBreak: #397097;
+  }
+button{ 
+    cursor: pointer;
+}
+.timer-container{ 
+    width: 550px;
+    height: 400px;
+    background:indianred;
+    border-radius: 30px;
+}
+.box{ 
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    justify-content: center;
+    padding-top: 20px;
+}
+.pomodoro{ 
+    color: white;
+    font-size: 18px;
+    font-family: "poppins";
+    font-weight: 700;
+    cursor: pointer;
+    width: 105px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    background-color: crimson;
+}
+.short{ 
+    color: white;
+    font-size: 18px;
+    font-family: "poppins";
+    font-weight: 700;
+    cursor: pointer;
+}
+.long{ 
+    color: white;
+    font-size: 18px;
+    font-family: "poppins";
+    font-weight: 700;
+    cursor: pointer;
+}
+.counter{ 
+    font-family: "poppins";
+    color: white;
+    font-weight: 600;
+    font-size: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.start-button{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.start{ 
+    cursor: pointer;
+    border: none;
+    margin: 20px 0px 0px;
+    padding: 0px 12px;
+    border-radius: 4px;
+    box-shadow: rgb(235, 235, 235) 0px 6px 0px;
+    font-family: "poppins";
+    font-size: 22px;
+    height: 55px;
+    color: rgb(186, 73, 73);
+    font-weight: bold;
+    width: 200px;
+    background-color: white;
+    transition: color 0.5s ease-in-out 0s;
+}
+button:focus,
+button:active {
+  outline: none;
+}
+.start:active {
+  transform: translateY(6px);
+  box-shadow: none;
+  outline: none;
+}
