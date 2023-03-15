@@ -12,7 +12,7 @@ body{
 }
 :root {
     --pomodoro: #db524d;
-    --shortBreak: #38858a;
+    --shortBreak: #498b90;
     --longBreak: #397097;
   }
 button{ 
@@ -43,6 +43,19 @@ button{
     align-items: center;
     justify-content: center;
     height: 30px;
+}
+.pomodoroactive{
+    color: white;
+    font-size: 18px;
+    font-family: "poppins";
+    font-weight: 700;
+    cursor: pointer;
+    width: 105px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
     background-color: crimson;
 }
 .short{ 
@@ -52,12 +65,36 @@ button{
     font-weight: 700;
     cursor: pointer;
 }
+.shortactive{
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    background-color: #38858a;
+}
 .long{ 
     color: white;
     font-size: 18px;
     font-family: "poppins";
     font-weight: 700;
     cursor: pointer;
+}
+.longactive{
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    background-color: #397097;
 }
 .counter{ 
     font-family: "poppins";
@@ -97,4 +134,7 @@ button:active {
   transform: translateY(6px);
   box-shadow: none;
   outline: none;
+}
+.none{
+    background-color: none;
 }
