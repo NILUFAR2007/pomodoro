@@ -18,12 +18,16 @@
           <div class="long">Long Break</div>
         </div>
         <div class="counter">
-          25:00
+            <span id="js-minutes">25</span>
+            <span class="separator">:</span>
+            <span id="js-seconds">00</span>
         </div>
         <div class="start-button">
-          <button class="start">Start</button>
+          <button class="start" data-action="start" id="js-btn" onclick="">Start</button>
         </div>
     </div>
+    <div class="cursor"></div>
+    <div class="cursor2"></div>
 </body>
 <script src="./main.js"></script>
 </html>
