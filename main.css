@@ -130,11 +130,9 @@ button:active {
   box-shadow: none;
   outline: none;
 }
-<<<<<<< HEAD
 .none{
     background-color: none;
 }
-=======
 .cursor{ 
     position: fixed;
     width: 50px;
@@ -159,4 +157,3 @@ button:active {
     transform: translate(-50%, -50%);
     transition: .15s;
 }
->>>>>>> origin/gang_dramma
