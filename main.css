@@ -1,6 +1,7 @@
 *{ 
     box-sizing: border-box;
     margin: 0;
+    cursor: none;
 }
 body{ 
     margin: 0;
@@ -9,14 +10,12 @@ body{
     display: grid;
     height: 100vh;
     place-items: center;
+    cursor: none;
 }
 :root {
     --pomodoro: #db524d;
     --shortBreak: #38858a;
     --longBreak: #397097;
-  }
-button{ 
-    cursor: pointer;
 }
 .timer-container{ 
     width: 550px;
@@ -36,7 +35,6 @@ button{
     font-size: 18px;
     font-family: "poppins";
     font-weight: 700;
-    cursor: pointer;
     width: 105px;
     border-radius: 10px;
     display: flex;
@@ -50,14 +48,12 @@ button{
     font-size: 18px;
     font-family: "poppins";
     font-weight: 700;
-    cursor: pointer;
 }
 .long{ 
     color: white;
     font-size: 18px;
     font-family: "poppins";
     font-weight: 700;
-    cursor: pointer;
 }
 .counter{ 
     font-family: "poppins";
@@ -74,7 +70,6 @@ button{
     justify-content: center;
 }
 .start{ 
-    cursor: pointer;
     border: none;
     margin: 20px 0px 0px;
     padding: 0px 12px;
@@ -97,4 +92,28 @@ button:active {
   transform: translateY(6px);
   box-shadow: none;
   outline: none;
+}
+.cursor{ 
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    border: 1px solid white;
+    border-radius: 50%;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: .0.1s;
+}
+.cursor2{ 
+    position: fixed;
+    width: 8px;
+    height: 8px;
+    background-color:white ;
+    border-radius: 50%;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: .15s;
 }
