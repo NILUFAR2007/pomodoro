@@ -1,13 +1,15 @@
 const audio = new Audio("ES_Button Click - SFX Producer.mp3");
 const buttons = document.querySelectorAll("button");
-const short = document.querySelector(".short")
 const body = document.querySelector("body")
 const timecounter = document.querySelector(".timer-container")
-const pomodoro = document.querySelector(".pomodoro")
 const start = document.querySelector(".start")
-const long = document.querySelector(".long")
+const btn = document.querySelector(".start");
+const pomodoro = document.querySelector(".pomodoro");
+const short = document.querySelector(".short");
+const long = document.querySelector(".long");
+const counter = document.querySelector(".counter");
 
-buttons.forEach(button => {
+buttons.forEach((button) => {
   button.addEventListener("click", () => {
     audio.play();
   });
@@ -20,6 +22,7 @@ pomodoro.addEventListener("click",()=>{
     long.classList.remove("longactive");
     start.style.color = "rgb(186, 73, 73)"
     pomodoro.classList.add("pomodoroactive");
+    counter.innerText = "25:00";
 })
 
 short.addEventListener("click",()=>{
@@ -29,6 +32,7 @@ short.addEventListener("click",()=>{
     long.classList.remove("longactive");
     start.style.color = "#38858a"
     short.classList.add("shortactive");
+    counter.innerText = "05:00";
 })
 
 long.addEventListener("click",()=>{
@@ -38,4 +42,14 @@ long.addEventListener("click",()=>{
     short.classList.remove("shortactive");
     start.style.color = "#397097"
     long.classList.add("longactive");
+    counter.innerText = "15:00";
 })
+btn.addEventListener("click", () => {
+  if (btn.textContent === "start") {
+    btn.innerText = "pause";
+  } else {
+    btn.innerText = "start";
+  }
+});
+
+
